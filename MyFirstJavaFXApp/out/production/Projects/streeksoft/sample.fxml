@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streeksoft.MyAwesomeController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button id="myButton" fx:id="myButton" layoutX="134.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" />
+            <Label id="myLabel" fx:id="myLabel" layoutX="26.0" layoutY="66.0" text="Label" />
+            <ComboBox fx:id="myBox" layoutX="16.0" layoutY="118.0" onAction="#handleListAction" prefWidth="150.0" />
+            <Button fx:id="asc" layoutX="28.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleSortButtonAction" text="ASC" />
+            <Button fx:id="desc" layoutX="114.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleReverseSortButtonAction" text="DESC" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
